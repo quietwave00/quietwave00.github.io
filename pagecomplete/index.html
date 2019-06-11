@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>우리 집 강아지</title>
+	<style>
+    
+    html {
+        cursor: url(img/cursor.png), auto;
+    } 
+        
+	* {
+		padding: 0;
+		margin: 0;   
+	}
+        
+    #wrap {
+        width: 1500px;
+        height: 800px;
+        margin-top: 100px;
+        margin-left: 200px ;
+        padding: 40x 80px;
+        border: #AF9984 3px solid;
+        background-color: #ece7e4;
+    }
+        
+    body {
+        background-image: url(img/pattern.png);
+        
+    }
+        
+	.clear {
+		clear: both;
+	}
+
+	header {
+		width : 1000px;
+		height: 100px;
+		margin-top: 40px;
+	}
+
+	#logo {
+		margin-top: 20px;
+		float: left;
+	}
+
+	#top {
+		float: right;
+		margin: 30px 20px 0 0;
+	}
+
+	nav {
+		width: 1200px;
+		height: 250px;
+		padding-top: 0px;
+	}
+
+	nav li {
+		display: inline;
+	}
+        
+	li {
+		list-style-type: none;
+        margin-left: 50px;
+	}
+
+	section {
+		float: left;
+		margin-top: 10px;
+	}
+        
+	aside { 
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+	border: solid 1px #ccc;
+	padding-left: 25px;
+	}
+
+	aside li {
+		margin-bottom: 20px;
+	}
+
+	footer {
+		width: 1000px;
+		height: 100px;
+		margin-top: 10px;
+	}
+        
+	#address {
+		float: left;
+		margin: 30px 0 0 20px;
+	}
+
+	#customer { 
+		float: right;
+		margin: 30px 0 0 180px;
+	}
+
+	#page {
+		width: 1000px;
+		margin: auto;
+	}
+
+    #center {
+   	 text-align: center;
+    }
+
+    .dropdown {
+		display:inline-block;
+	}
+
+	.dropdownContents {
+		display:none;
+		background-color: #ffe8e8;
+        border: 1px solid lightpink;
+        opacity: 0.8;
+		position: absolute; /*옆으로*/
+		width: 300px;
+		padding:12px 16px;
+        text-align: center;
+	}
+        
+	.dropdown:hover .dropdownContents {
+		display:block;
+	}
+        
+    .margin { 
+        margin-left: 100px;
+    }
+        
+    .trans:hover {
+		transform: rotate(360deg);
+		transition: width 2s,height 2s,transform 2s;
+    }
+        
+	</style>
+</head>
+
+<body>
+
+<section id = "wrap">
+<div id = "page">
+
+	<header>
+
+		<div id = "center">
+            <img src = "./img/title.png">
+		</div>
+
+		<div id = "top">
+		</div>
+
+	</header>
+
+	<div class = "clear"></div>
+    
+	<nav>
+        
+		<ul>
+			<div class="dropdown">
+			<a href ="one.html"><li><img src = "./img/menu1.png" width="200"></li></a>
+			<div class="dropdownContents">
+				꽁꽁이의 생일, 성격, 특징 등에<br>대해 알려 드려요
+			</div>
+			</div>
+            
+			<div class="dropdown">
+                <a href = "two.html"><li><img src = "./img/menu2.png" width="200"></li></a>
+			<div class="dropdownContents">
+				꽁꽁이의 이름은 왜 꽁꽁이가 되었을까? 이름의 유래에 대해 알려드려요
+			</div>
+			</div>
+
+			<div class="dropdown">
+                <a href = "three.html"><li><img src = "./img/menu3.png" width="200"></li></a>
+            <div class="dropdownContents">
+            	꽁꽁이의 특이한 버릇은 무엇일까요?
+        	</div>
+        	</div>
+            
+            <div class="dropdown">
+                <a href = "four.html"><li><img src = "./img/menu4.png" width="200"></li></a>
+            <div class="dropdownContents">
+                꽁꽁이가 좋아하는 사료, 간식, 인형을 <br>소개해 드려요
+            </div>
+            </div>
+            
+            <section class = "margin">
+            <div class="dropdown">
+            <li>&nbsp;&nbsp;<img src = "./img/menuimgleft.png" width="150"></li>
+            <div class="dropdownContents">
+                멍
+            </div>
+            </div>
+            
+            <div class="dropdown">
+                <div class = "trans">
+                <a href = "five.html"><li><img src = "./img/menu6.png" width="200"></li></a></div>
+            <div class="dropdownContents">
+                추첨을 통해 간식, 사료를 보내드립니다!
+            </div>
+            </div>
+            
+            <div class="dropdown">
+            <li>&nbsp;&nbsp;<img src = "./img/menuimg.png" width="150"></li>
+            <div class="dropdownContents">
+                멍
+            </div>
+            </div>
+            </section>
+            
+		</ul>
+
+	</nav>
+    
+	<div class = "clear"></div>
+    
+	<section>
+
+		<img src = "./img/main.png" width = "1000">
+
+	</section>
+
+	<div class = "clear"></div>
+
+	<footer>
+
+		<div class = "address" id = "center">
+			<img src = "./img/copyright.png">
+		</div>
+
+
+
+	</footer>
+</div>
+</section>
+</body>
+
+</html>
